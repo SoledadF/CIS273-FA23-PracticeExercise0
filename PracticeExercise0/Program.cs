@@ -11,6 +11,11 @@ public class Program
 
     }
 
+    /***
+     * Write a method that will take a string and determine if the 
+     * string is a palindrome (the same forwards and backward). 
+     * Ignore the case and all spaces. 
+    */
     public static bool IsPalindrome(string s)
     {
         // clean up
@@ -33,6 +38,11 @@ public class Program
         return reversed;
     }
 
+
+    /***
+     * Write a method that accepts an integer (positive or negative) and 
+     * returns the “reversed” number, but retains the sign. 
+     */
     public static int ReverseInt(int i)
     {
         //325%10 => 5
