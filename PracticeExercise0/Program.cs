@@ -99,6 +99,16 @@ public class Program
      */
     public static bool IsNeilNumber(int i)
     {
+        int numDigits = (int)Math.Floor(Math.Log10(i)) + 1;
+        foreach (char digit in i.ToString())
+        {
+            Console.WriteLine(digit);
+            //convert char to int
+            int number = int.Parse(digit.ToString());
+
+            int power = (int)Math.Pow(5, 8);
+        }
+
         return true;
     }
 
@@ -112,7 +122,9 @@ public class Program
      */
     public static string Convert(string s)
     {
-        return "";
+        string result = s.ToLower().Trim().Replace("zero", "0");
+        result = result.Replace("one", "1");
+        return result;
     }
 
 }
